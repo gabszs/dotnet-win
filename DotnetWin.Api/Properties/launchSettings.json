@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OTEL_SERVICE_NAME": "DotnetWin.Api",
+        "OTEL_SERVICE_VERSION": "1.0.0",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "https://otlp-gateway-prod-sa-east-1.grafana.net/otlp",
+        "OTEL_EXPORTER_OTLP_PROTOCOL": "http/protobuf",
+        "OTEL_EXPORTER_OTLP_HEADERS": "Authorization=Basic MTU5ODc2MDpnbGNfZXlKdklqb2lNVFU1T0RjMk1DSXNJbTRpT2lKemRHRmpheTB4TkRRNE5EYzRMVzkwYkhBdGQzSnBkR1V0ZEdWemRHVWlMQ0pySWpvaU5ETnlhSGw0TWxCdk0xVXlPVEEyT0UxNFdFZFlNMnhMSWl3aWJTSTZleUp5SWpvaWNISnZaQzF6WVMxbFlYTjBMVEVpZlgwPQ=="
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aNTwjGoEdCY3Ty3J0pdkVG3Z7VJY58nXSuaJ1RZ199E=",
+  "Source": "DotnetWin.Api",
+  "BasePath": "_content/DotnetWin.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
