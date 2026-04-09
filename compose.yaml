@@ -10,11 +10,11 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=dotnetwin;Username=postgres;Password=postgres
       ConnectionStrings__Redis: redis:6379
-      OTEL_SERVICE_NAME: dotnet-win-api
-      OTEL_SERVICE_VERSION: "1.0.0"
-      OTEL_EXPORTER_OTLP_ENDPOINT: https://collector.gabrielcarvalho.dev
-      OTEL_EXPORTER_OTLP_PROTOCOL: http/protobuf
-      # OTEL_EXPORTER_OTLP_HEADERS: Authorization=Basic MTU5ODc2MDpnbGNfZXlKdklqb2lNVFU1T0RjMk1DSXNJbTRpT2lKemRHRmpheTB4TkRRNE5EYzRMVzkwYkhBdGQzSnBkR1V0ZEdWemRHVWlMQ0pySWpvaU5ETnlhSGw0TWxCdk0xVXlPVEEyT0UxNFdFZFlNMnhMSWl3aWJTSTZleUp5SWpvaWNISnZaQzF6WVMxbFlYTjBMVEVpZlgwPQ==
+      OTEL_SERVICE_NAME: ${OTEL_SERVICE_NAME:-}
+      OTEL_SERVICE_VERSION: ${OTEL_SERVICE_VERSION:-}
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT:-}
+      OTEL_EXPORTER_OTLP_PROTOCOL: ${OTEL_EXPORTER_OTLP_PROTOCOL:-}
+      OTEL_EXPORTER_OTLP_HEADERS: ${OTEL_EXPORTER_OTLP_HEADERS:-}
     depends_on:
       postgres:
         condition: service_healthy
